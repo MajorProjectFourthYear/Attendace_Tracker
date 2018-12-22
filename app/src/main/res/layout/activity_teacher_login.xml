@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context="com.example.user.attendance_tracker.TeacherLogin">
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        tools:context="com.example.user.attendance_tracker.TeacherLogin">
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/teacherIdLayout"
+            android:layout_width="317dp"
+            android:layout_height="62dp"
+            android:layout_marginEnd="47dp"
+            android:layout_marginStart="47dp"
+            android:layout_marginTop="268dp"
+            app:hintAnimationEnabled="true"
+            app:hintTextAppearance="@style/HintText"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/regNo"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                android:hint="Enter Employee Id"
+
+
+
+                />
+        </android.support.design.widget.TextInputLayout>
+
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/textInputLayout2"
+            android:layout_width="317dp"
+            android:layout_height="61dp"
+            app:hintTextAppearance="@style/HintText"
+            app:layout_constraintBottom_toTopOf="@+id/loginBtn"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/teacherIdLayout"
+
+            app:layout_constraintVertical_bias="0.213"
+            app:passwordToggleEnabled="true"
+            app:passwordToggleTint="@color/backgroundBlue">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/pass"
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                android:hint="Enter Your Password"
+
+                android:inputType="textPassword" />
+        </android.support.design.widget.TextInputLayout>
+
+        <Button
+            android:id="@+id/loginBtn"
+            android:layout_width="250dp"
+            android:layout_height="46dp"
+            android:layout_marginEnd="223dp"
+            android:layout_marginStart="190dp"
+            android:layout_marginTop="86dp"
+            android:background="@drawable/button_background"
+            android:text="Login"
+            android:textColor="@color/white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.436"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textInputLayout2" />
+
+        <pl.droidsonroids.gif.GifImageView
+            android:layout_width="331dp"
+            android:layout_height="74dp"
+            android:layout_marginBottom="75dp"
+            android:layout_marginEnd="118dp"
+            android:layout_marginStart="117dp"
+            android:layout_marginTop="66dp"
+            android:src="@drawable/teacher_login_gif"
+            app:layout_constraintBottom_toTopOf="@+id/teacherIdLayout"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </android.support.constraint.ConstraintLayout>
+
+</ScrollView>
+
+
+
+

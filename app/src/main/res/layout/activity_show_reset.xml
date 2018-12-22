@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+
+        tools:context="com.example.user.attendance_tracker.TeacherLogin"
+        >
+
+        <pl.droidsonroids.gif.GifImageView
+            android:id="@+id/gifImageView"
+            android:layout_width="293dp"
+            android:layout_height="122dp"
+            android:layout_marginEnd="155dp"
+            android:layout_marginStart="155dp"
+            android:layout_marginTop="84dp"
+            android:src="@drawable/checkmark"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="313dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="23dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="58dp"
+            android:text="@string/reset_password"
+            android:textSize="15dp"
+            android:typeface="serif"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/gifImageView" />
+
+
+        <Button
+            android:id="@+id/okayButton"
+            android:layout_width="250dp"
+            android:layout_height="46dp"
+            android:layout_marginEnd="55dp"
+            android:layout_marginStart="55dp"
+            android:layout_marginTop="145dp"
+            android:background="@drawable/button_background"
+            android:text="Okay"
+            android:textColor="@color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+
+    </android.support.constraint.ConstraintLayout>
+</ScrollView>

@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.user.attendance_tracker.StudentRegistration"
+    android:background="@color/white"
+    >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:orientation="vertical"
+
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0">
+
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/inLayRegnNo"
+                android:layout_width="317dp"
+                android:layout_height="64dp"
+                android:layout_marginEnd="136dp"
+                android:layout_marginStart="147dp"
+                android:layout_marginTop="190dp"
+                app:hintAnimationEnabled="true"
+                app:hintTextAppearance="@style/HintText"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/editRegnNo"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="Enter Your RegnNo"
+
+
+                    android:inputType="number"
+
+                    />
+            </android.support.design.widget.TextInputLayout>
+
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/inLayPass"
+                android:layout_width="317dp"
+                android:layout_height="60dp"
+                android:layout_marginEnd="42dp"
+                android:layout_marginStart="47dp"
+                android:layout_marginTop="28dp"
+                app:hintTextAppearance="@style/HintText"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.487"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/inLayRegnNo"
+                app:passwordToggleEnabled="true"
+                app:passwordToggleTint="#42A5F5">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/editPass"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="Enter Your Password"
+
+                    android:inputType="textPassword"
+
+                    android:textSize="16dp" />
+            </android.support.design.widget.TextInputLayout>
+
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/inLayPassre"
+                android:layout_width="317dp"
+                android:layout_height="55dp"
+                android:layout_marginEnd="39dp"
+                android:layout_marginStart="50dp"
+                android:layout_marginTop="17dp"
+                app:hintTextAppearance="@style/HintText"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/inLayPass">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/editPassre"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="Confirm Your Password"
+                    android:inputType="textPassword"
+
+
+                    android:textSize="16dp" />
+            </android.support.design.widget.TextInputLayout>
+
+
+            <Spinner
+                android:id="@+id/spinnerBranch"
+                android:layout_width="317dp"
+                android:layout_height="60dp"
+                android:layout_marginBottom="24dp"
+                android:layout_marginEnd="138dp"
+                android:layout_marginStart="146dp"
+                android:layout_marginTop="28dp"
+                app:layout_constraintBottom_toTopOf="@+id/inLaySem"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/inLayPassre" />
+
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/inLaySem"
+                android:layout_width="317dp"
+                android:layout_height="60dp"
+                android:layout_marginEnd="41dp"
+                android:layout_marginStart="53dp"
+                android:layout_marginTop="24dp"
+                app:hintTextAppearance="@style/HintText"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/spinnerBranch">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/editSem"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="Enter Your Semester"
+
+
+                    android:inputType="number"
+                    android:textSize="16dp" />
+
+            </android.support.design.widget.TextInputLayout>
+
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/inLaySec"
+                android:layout_width="317dp"
+                android:layout_height="62dp"
+                android:layout_marginBottom="81dp"
+                android:layout_marginEnd="39dp"
+                android:layout_marginStart="53dp"
+                android:layout_marginTop="24dp"
+                app:hintTextAppearance="@style/HintText"
+                app:layout_constraintBottom_toTopOf="@+id/registerbtn"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/inLaySem">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/editSec"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+
+                    android:hint="Enter Your Sec"
+                    android:inputType="number"
+
+                    />
+            </android.support.design.widget.TextInputLayout>
+
+
+            <Button
+                android:id="@+id/registerbtn"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="81dp"
+                android:layout_marginStart="80dp"
+                android:layout_marginTop="80dp"
+                android:background="@drawable/button_background"
+                android:elevation="4dp"
+                android:text="Register"
+                android:textColor="@color/white"
+                android:textSize="15dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/inLaySec" />
+
+
+
+
+        </android.support.constraint.ConstraintLayout>
+    </ScrollView>
+</android.support.constraint.ConstraintLayout>
